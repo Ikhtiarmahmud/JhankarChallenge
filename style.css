@@ -1,0 +1,213 @@
+@import url(css/normalize.css);
+@import url(css/font-awesome.css);
+
+/*Basic Css*/
+body{
+
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    width:1170px;
+    margin: auto;
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-4{
+    width: 33.333%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-3{
+    width: 25%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2{
+    width: 50%;
+    float:left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.text-center{
+    text-align: center;
+}
+figure{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/*Headers*/
+.head{
+    display: inline-block;
+}
+.head h3 {
+    color: #d633e7;
+    font-size: 31px;
+    text-shadow: 0px 0px 5px #c882a7;
+}
+.head p {
+    margin-left: 3px;
+    font-size: 19px;
+    color: crimson;
+    text-transform: full-width;
+}
+header{
+    background-color: #F9F9F9;
+}
+header img{
+    float:left;
+    padding-bottom: 10px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    padding-top: 38px;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 17px;
+    font-size: 19px;
+    color: #41788a;
+    text-transform: uppercase;
+}
+.anchor{
+    transition: 0.4s;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.anchor:hover {
+    background-color: #c78cb1;
+    color: White;
+    padding: 14px 10px;
+}
+/*services*/
+#services {
+    background: url("image/section-bg-2.png") fixed;
+    margin-top: 0;
+    padding: 50px 0px 67px 0px;
+}
+#services h1 {
+    margin: 0;
+    font-size: 33px;
+    font-weight: normal;
+    /* padding: 0px; */
+    color: #594444;
+}
+#services p {
+    color: #594444;
+    margin-top: 15px;
+}
+#services h2 {
+    padding-top: 45px;
+    text-transform: uppercase;
+    /* font-size: 23px; */
+    /* font-weight: bold; */
+    /* color: #745959; */
+    padding-bottom: 25px;
+}
+#services figure {
+    background: white;
+    padding: 10px;
+    border: 2px solid #E3E3E3;
+}
+/*Owner Section*/
+
+
+#owner{
+    padding: 30px;
+    background-color: #EBDDF6;
+}
+#owner .container .aboutme h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+#owner .container .aboutme figure img{
+    float: left;
+    margin-right: 22px;
+}
+#owner .container .aboutme figcaption p {
+    text-align: justify;
+    line-height: 28px;
+}
+#owner #myservices h2{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+#owner #myservices > div i{
+    float: left;
+    margin-right: 20px;
+    font-size: 40px;
+    color: #5ba0bf;
+}
+#owner #myservices > div > div h3 {
+    font-size: 24px;
+    color: #ff003699;
+}
+#owner #myservices > div > div p {
+    margin-left: 60px;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+#owner #myservices .like {
+    margin-left: 169px;
+    font-size: 21px;
+    line-height: 40px;
+    color: darkblue;
+}
+#owner table,tr,td,th{
+    border: 2px solid green;
+    text-align: center;
+}
+/*footer*/
+#footer{
+    background-color: #333333;
+    padding: 40px;
+}
+#footer .container p {
+    color: #d5d5d5;
+    float: left;
+}
+#footer .container .socialicon{
+    float: right;
+}
+#footer .container .socialicon i {
+    color: white;
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+     padding: 12px;
+    font-size: 27px;
+    border-radius: 58%;
+}
+#footer .container .socialicon i:hover {
+    border: 1px solid black;
+    color: black;
+}
+@media (min-width: 320px) and  (max-width: 480px){
+    html,body{
+        display: none;
+    }
+}
